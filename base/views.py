@@ -21,7 +21,7 @@ def home(request):
 def predict(request):
     return render(request, 'predict.html')
 def result(request):
-    data = pd.read_csv('C:\\Users\\USER\\Downloads\\diabetes dataset.csv')
+    data = pd.read_csv('diabetes dataset.csv')
 
     x= data.drop('Outcome',axis=1)
     y= data['Outcome']
