@@ -5,43 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style type= text/css>
-            div{
-            color:white;
-        }
-        h1{
-            color: 'white';
-            font-family: arial, sans-serif;
-            font-size: 60px;
-            font-weight: bold;
-            margin-top: 200px;
-        }
-        h2{
-            color: 'white';
-            font-family: arial, sans-serif;
-            font-size: 15px;
-            font-weight: bold;
-            margin-top: 400px;
-        }
-        
-        body{
+    <style>
+        body {
             background-image: url("{% static '/Diabetes/images/diab.svg' %}");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
         }
-        input[type=submit]{
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+        }
+        input[type=submit] {
             background-color: #4dc3ff;
-            border: 2px;
+            border: none;
             color: white;
             padding: 16px 32px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 30px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px;
+            }
+            input[type=submit] {
+                width: 80%;
+                padding: 12px 24px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-   <div style="text-align: center;">
+   <div>
     <h1>
          DIABETES PREDICTION SYSTEM
     </h1>
