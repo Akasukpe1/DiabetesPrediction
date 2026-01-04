@@ -1,7 +1,7 @@
 
 # Diabetes Risk Prediction using Machine Learning
 
-This project uses three different machine learning algorithms to evaluate a dataset from kaggle. The algorithms used include:
+This project uses four different machine learning algorithms to evaluate a dataset from kaggle. The algorithms used include:
 1. Logistic regression
 2. Naive Bayes
 3. Decision tree
